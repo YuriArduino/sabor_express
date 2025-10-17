@@ -5,7 +5,7 @@
 `![cli_menu_principal_3](assets/cli_menu_principal_3.png)`
 `![cli_menu_api](assets/cli_menu_api.png)`
 
-Uma aplicação completa para gerenciar cardápios de restaurantes, construída com FastAPI e Typer. Este projeto é o resultado da evolução de uma aplicação de curso, refatorada para seguir as melhores práticas de arquitetura de software, incluindo separação de responsabilidades, modelagem de dados com Pydantic e gerenciamento de projeto moderno com `pyproject.toml`.
+Uma aplicação completa para gerenciar cardápios de restaurantes, construída com FastAPI e Typer. Projeto referente a conclusão do curso Python com Orientação a Objetos, seguindo as melhores práticas de arquitetura de software, incluindo separação de responsabilidades, modelagem de dados com Pydantic e gerenciamento de projeto moderno com `pyproject.toml`.
 
 ##  Principais Funcionalidades
 
@@ -15,7 +15,7 @@ Uma aplicação completa para gerenciar cardápios de restaurantes, construída 
 - **Classificação Inteligente de Dados**: Um módulo classificador que analisa os itens do cardápio e os agrupa em categorias (Bebidas, Sobremesas, etc.) dinamicamente, sem alterar a fonte de dados original.
 - **Gerenciamento de Projeto Moderno**: Utiliza `pyproject.toml` para centralizar todas as dependências, metadados e configurações de ferramentas.
 
-##  Instalação e Setup
+## 🚀 Instalação e Setup
 
 ### Pré-requisitos
 - Python 3.10 ou superior
@@ -48,7 +48,7 @@ Uma aplicação completa para gerenciar cardápios de restaurantes, construída 
     ```
     Este comando instala a aplicação e cria o ponto de entrada `sabor-express`.
 
-##  Como Usar
+## 🛠️ Como Usar
 
 A aplicação possui duas partes que rodam em terminais separados: o servidor da API e o cliente CLI.
 
