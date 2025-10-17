@@ -30,7 +30,7 @@ class Restaurante(BaseModel):
     """Schema principal para um restaurante."""
 
     nome: str
-    categoria: str = "Não especificada"  # Podemos definir um padrão
+    categoria: str = "Não especificada"  # Pode se definir um padrão
     ativo: bool = False
     cardapio: List[ItemCardapio] = []
     avaliacoes: List[Avaliacao] = []

@@ -48,9 +48,6 @@ def carregar_dados_restaurantes() -> Dict[str, Restaurante]:
                 with open(filepath, "r", encoding="utf-8") as f:
                     dados_cardapio_raw = json.load(f)
 
-                # ===================================================================
-                #  BLOCO DE LÓGICA CORRIGIDO
-                # ===================================================================
                 cardapio_processado = []
                 for item_dict in dados_cardapio_raw:
                     # 1. Classifica o item para obter a categoria
@@ -62,7 +59,6 @@ def carregar_dados_restaurantes() -> Dict[str, Restaurante]:
                     # 3. Agora, valida o dicionário completo (com a categoria)
                     item_validado = ItemCardapio.model_validate(item_dict)
                     cardapio_processado.append(item_validado)
-                # ===================================================================
 
                 # Cria a instância do Restaurante com o cardápio já processado
                 restaurante = Restaurante(

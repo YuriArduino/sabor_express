@@ -16,7 +16,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [
-    { name = "Yuri Arduino", email = "seu-email@exemplo.com" },
+    { name = "Yuri Arduino", email = "yuriarduino@gmail.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

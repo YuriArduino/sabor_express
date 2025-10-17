@@ -47,12 +47,10 @@ def get_db_dependency() -> Dict[str, Restaurante]:
     return db
 
 
-# CORREÇÃO: Usamos o método oficial do FastAPI para substituir a dependência.
+# CORREÇÃO: Usei o método oficial do FastAPI para substituir a dependência.
 # Isso garante que, sempre que FastAPI encontrar 'restaurants.get_db', ele usará
-# a nossa função 'get_db_dependency' em vez da placeholder.
+# a função 'get_db_dependency' em vez da placeholder.
 app.dependency_overrides[restaurants.get_db] = get_db_dependency
-
-# A linha antiga 'restaurants.get_db = get_db_dependency' foi REMOVIDA.
 
 # ===================================================================
 #  Inclusão dos Routers

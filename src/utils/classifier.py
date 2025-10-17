@@ -5,7 +5,7 @@ Responsável por analisar o nome de um item e atribuir-lhe uma categoria
 com base em um conjunto de regras e palavras-chave.
 """
 
-# Usar sets para uma busca de palavras-chave um pouco mais eficiente
+# Usar sets para uma busca de palavras-chavede forma mais eficiente
 CATEGORIAS = {
     "BEBIDA": {
         "small",

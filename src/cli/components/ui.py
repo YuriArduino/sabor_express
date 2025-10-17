@@ -17,13 +17,10 @@ class MenuUI:
         """Limpa o console."""
         os.system("cls" if os.name == "nt" else "clear")
 
-    # ===================================================================
-    #  MÉTODO CORRIGIDO
-    # ===================================================================
     @staticmethod
     def display_subtitle(subtitle: str):
         """Mostra um subtítulo formatado."""
-        # CORREÇÃO: Chamamos o método estático diretamente pela classe.
+        # Chama o método estático diretamente pela classe.
         MenuUI.clear_screen()
         line = "*" * (len(subtitle) + 4)
         print(f"{line}\n  {subtitle}  \n{line}\n")
