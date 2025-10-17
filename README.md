@@ -1,9 +1,6 @@
 # Sabor Express API & CLI
 
-`![cli_menu_principal_1](assets/cli_menu_principal_1.png)`
-`![cli_menu_principal_2](assets/cli_menu_principal_2.png)`
-`![cli_menu_principal_3](assets/cli_menu_principal_3.png)`
-`![cli_menu_api](assets/cli_menu_api.png)`
+![Menu Principal da CLI - Opção 1](assets/cli_menu_principal_1.png) ![Menu Principal da CLI - Opção 2](assets/cli_menu_principal_2.png) ![Menu Principal da CLI - Opção 3](assets/cli_menu_principal_3.png) ![Documentação Interativa da API](assets/cli_menu_api.png)
 
 Uma aplicação completa para gerenciar cardápios de restaurantes, construída com FastAPI e Typer. Projeto referente a conclusão do curso Python com Orientação a Objetos, seguindo as melhores práticas de arquitetura de software, incluindo separação de responsabilidades, modelagem de dados com Pydantic e gerenciamento de projeto moderno com `pyproject.toml`.
 
