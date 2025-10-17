@@ -1,0 +1,72 @@
+# ===================================================================
+#  Configuração do Sistema de Build
+# ===================================================================
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+# ===================================================================
+#  Metadados e Dependências do Projeto
+# ===================================================================
+[project]
+name = "sabor-express"
+version = "1.0.0"
+description = "Uma API e CLI para gerenciar cardápios de restaurantes."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Yuri Arduino", email = "seu-email@exemplo.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Framework :: FastAPI",
+]
+
+# Dependências principais da aplicação
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "typer[all]",
+    "requests",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+]
+
+# ===================================================================
+#  Scripts de Linha de Comando
+# ===================================================================
+[project.scripts]
+sabor-express = "main:cli_app"
+
+# ===================================================================
+#  Dependências Opcionais (para desenvolvimento)
+# ===================================================================
+[project.optional-dependencies]
+dev = [
+    "pylint",
+    "black",
+    "isort",
+    "jupyterlab",
+]
+
+# ===================================================================
+#  Configuração de Ferramentas
+# ===================================================================
+[tool.setuptools]
+# Esta é a única configuração necessária para o setuptools agora.
+package-dir = {"" = "src"}
+
+[tool.pylint.main]
+attr-rgx = '([a-z_][a-z0-n9_]{2,30}|[A-Z_][A-Z0-9_]{1,30})$'
+max-line-length = 88
+
+[tool.black]
+line-length = 88
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"

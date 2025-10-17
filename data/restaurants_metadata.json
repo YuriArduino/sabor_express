@@ -1,0 +1,32 @@
+[
+  {
+    "nome": "Pizza Hut",
+    "categoria": "Pizzaria",
+    "ativo": true
+  },
+  {
+    "nome": "Taco Bell",
+    "categoria": "Mexicana",
+    "ativo": true
+  },
+  {
+    "nome": "Burger King",
+    "categoria": "Fast Food",
+    "ativo": true
+  },
+  {
+    "nome": "KFC",
+    "categoria": "Fast Food",
+    "ativo": false
+  },
+  {
+    "nome": "McDonald’s",
+    "categoria": "Fast Food",
+    "ativo": true
+  },
+  {
+    "nome": "Wendy’s",
+    "categoria": "Fast Food",
+    "ativo": false
+  }
+]
